@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, blue,purple);
+}
+.container{
+    border-radius: 10px;
+    padding: 50px;
+    background-color: white;
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container h1{
+    font-size: 50px;
+    
+}
+.input{
+    width: 80%;
+    display: flex;
+    height: 50px;
+    box-shadow: 0 0 0.5rem black;
+    border-radius: 10px;
+
+}
+input{
+    width: 75%;
+    height: 93%;
+    padding: 0px 10px 0 10px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: large;
+
+}
+button{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(45deg ,  purple , blue);
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    scale: 0.97;
+}
+ul{
+    width: 80%;
+}
+
+ul li{
+    width: 100%;
+    list-style: none;
+    margin: 5px;
+    user-select: none;
+    padding: 0px 20px 0px 15px;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.25s ease;
+
+
+}
+span:hover{
+    background-color: grey;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked-10.png);
+    background-size: cover;
+    background-position: center;
+    top: 0px;
+    left: -24px;
+    transition: all 0.25s ease;
+    
+}
+.checked::before{
+    background-image: url(checked.jpg);
+}
+span{
+    position: absolute;
+    background-image: url(cross.png);
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+}
